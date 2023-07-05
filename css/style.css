@@ -1,0 +1,268 @@
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 200;
+    src: url('../fonts/josefin-sans-v26-latin-200italic.woff2') format('woff2'); 
+  }
+
+@font-face {
+    font-display: swap;  
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/josefin-sans-v26-latin-300.woff2') format('woff2');
+  }
+
+@font-face {
+    font-display: swap;
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/alata-v9-latin-regular.woff2') format('woff2'); 
+  }
+
+* ,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Josefin Sans" sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+.header {
+   height: 650px;
+   background-image: url("../images/background-image.png");
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+.loopstudios {
+    position: absolute;
+    width: 192px;
+    height: 32px;
+    top: 94px;
+    left: 165px;
+}
+
+.loopstudios-text {
+    gap: 30px;
+    margin-left: 820px;
+    padding-top: 70px;
+}
+
+.loopstudios-link {
+    position: relative;
+    display: flex;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-evenly;
+    line-height: 25px;
+}
+
+.loopstudios-link::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 0%;
+    background-color: #ffffff;
+    bottom: -6px;
+}
+
+.loopstudios-link:hover::before {
+    width: 100%;
+}
+
+.immersive {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    width: 600px;
+    height: 258px;
+    margin-top: 133px;
+    margin-left: 160px;
+    border: 2px solid;
+}
+
+.text {
+    width: 570px;
+    height: 198px;
+    font-size: 62px;
+    line-height: 70px;
+    text-align: left;
+    margin-left: 10px;
+    padding: 25px;
+}
+
+/* HERO */
+.hero-container {
+    width: 1111px;
+    height: 500px;
+    background-image: url("../images/Bitmap2.png");
+    background-repeat: no-repeat;
+    margin-top: 110px;
+    margin-left: 130px;
+}
+
+.hero {
+    position: absolute;
+    width: 541px;
+    height: 317px;
+    top: 968px;
+    background-color: #ffffff;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+    left: 710px;
+}
+
+.hero-text {
+    width: 445px;
+    height: 96px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.hero-p {
+    display: flex;
+    align-items: end;
+    line-height: 25px;
+    font-size: 15px;
+    width: 445px;
+    height: 100px;
+    opacity: 49.94%;
+}
+
+/* SECTION */
+.our-creations {
+    display: flex;
+}
+
+.creations {
+    width: 445px;
+    height: 48px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    margin-top: 130px;
+    line-height: 48px;
+    text-align: left;
+    margin-left: 120px;
+}
+
+.button {
+    font-family: 'Alata', sans-serif;
+    width: 157px;
+    height: 40px;
+    margin-top: 135px;
+    margin-left: 500px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    border: 2px solid #000000;
+    padding-top: 5px;
+    transition: 0.4s;
+}
+
+.button:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.group-1 {
+    width: 1114px;
+    height: 450px;
+    margin-top: 80px;
+    margin-left: 120px;  
+}
+
+.group-2 {
+    width: 1114px;
+    height: 450px;
+    margin-top: 40px;
+    margin-left: 120px; 
+}
+
+/* FOOTER */
+.footer-container {
+    background-color: #000000;
+    width: 1440px;
+    height: 160px;
+    margin-top: 150px;
+}
+
+.site-logo {
+    width: 144px;
+    height: 24px;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+.facebook {
+    margin-left: 800px;
+}
+
+.twitter {
+    margin-left: 20px;
+}
+
+.kuchukcha {
+    margin-left: 20px;
+}
+
+.instagram {
+    margin-left: 20px;
+}
+
+.footer-container-end {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    width: 380px;
+    height: 25px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 95px;
+    color: #fff;
+}
+
+.footer-end {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 22px;
+    margin-left: 490px;
+    color: #fff;
+}
